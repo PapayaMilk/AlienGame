@@ -1,13 +1,13 @@
 import pygame
 from pygame.sprite import Group
 
-from aliengame.settings import Settings
-from aliengame.ship import Ship
-from aliengame.alien import Alien
-from aliengame.game_stats import GameStats
-from aliengame.button import Button
-from aliengame.scoreboard import Scoreboard
-import aliengame.game_functions as gf
+from settings import Settings
+from ship import Ship
+from alien import Alien
+from game_stats import GameStats
+from button import Button
+from scoreboard import Scoreboard
+import game_functions as gf
 
 
 def run_game():
@@ -60,4 +60,5 @@ def run_game():
         # pygame.display.flip()
 
 
-run_game()
+if __name__ == '__main__':
+    run_game()
